@@ -3,9 +3,9 @@ tags: []
 parent: ""
 collections:
     - 球面全息
-$version: 702
+$version: 714
 $libraryID: 1
-$itemKey: STT3K3ZV
+$itemKey: L5XMT2XI
 
 ---
 # Speckle reduced lensless holographic projection from phase-only computergenerated hologram
@@ -33,10 +33,15 @@ $itemKey: STT3K3ZV
 
 ```
 
-
 > First, 4-f optical filtering system is employed to reconstruct complex amplitude, increasing the complexity of the system by the presence of bulky lenses, which requires much space due to its finite focal length and aperture. Second, the size of the reconstructed image is greatly restricted, because when the image size is larger than the CGH, the desired information of the complex amplitude image is difficult to be filtered by 4-f system.
 
 ```
 这表明利用4-f系统会大大增加系统的复杂度
 
 ```
+
+**所以我们得出结论**
+    我们得到了一种可以解决散斑噪声的方法，并且可以缩放达到slm的最大衍射带宽
+
+
+## Method and situmulation
