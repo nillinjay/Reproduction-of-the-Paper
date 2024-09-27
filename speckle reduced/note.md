@@ -71,7 +71,8 @@ $$
 ***
 
 整个建立cgh的过程可以分为两步，如图所示  
-<img alt="衍射过程" src="/home/nil/桌面/论文复现/speckle reduced/jpg/image.png" ztype="zimage">
+
+！[衍射过程]（./jpg/image.png）
 
 ***step 1:物光场投射到虚拟平面上*** 物光场的复振幅可以通过下面的形式传递到虚拟平面上:
 
