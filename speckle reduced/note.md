@@ -3,7 +3,7 @@ tags: []
 parent: ""
 collections:
     - 球面全息
-$version: 799
+$version: 806
 $libraryID: 1
 $itemKey: LC2A3LUP
 
@@ -19,14 +19,6 @@ $itemKey: LC2A3LUP
 主要成就：
 1.在数值模拟和实际中验证了对散板噪声的抑制作用
 2.可以很好的利用slm的空间尺寸，最紧凑型无透镜全息投影有很好的作用
-
-
-
-
-
-
-
-
 
 
 ```
@@ -70,9 +62,9 @@ $$
 
 ***
 
-整个建立cgh的过程可以分为两步，如图所示  
+整个建立cgh的过程可以分为两步，如图所示
 
-！[衍射过程]（./jpg/image.png）
+![\<img alt="衍射过程" data-attachment-key="5W32DEZ5" src="attachments/5W32DEZ5.png" ztype="zimage">](attachments/5W32DEZ5.png)
 
 ***step 1:物光场投射到虚拟平面上*** 物光场的复振幅可以通过下面的形式传递到虚拟平面上:
 
