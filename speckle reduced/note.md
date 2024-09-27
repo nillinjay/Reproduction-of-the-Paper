@@ -72,7 +72,7 @@ $$
 而物光场的复振幅可以通过下面的形式传递到虚拟平面上:
 
 $$
-VP(x_v, y_v) = \iint I(x, y) \cdot \exp \left( \frac{i \pi}{\lambda d_2} \left[ (x_v - s_x)^2 + (y_v - s_y)^2 \right] \right) dx\,dy 
- \\= \mathcal{F}^{-1} \left\{ \mathcal{F} \left[ I(x, y) \cdot \exp(i \varphi_1) \right] \cdot \mathcal{F} \left[ \exp(i \varphi_2) \cdot \text{Rect} \right] \right\}
+VP(x_v, y_v) = \iint I(x, y) \cdot \exp \left( \frac{i \pi}{\lambda d_2} \left[ (x_v - s_x)^2 + (y_v - s_y)^2 \right] \right) dx\,dy \\
+= \mathcal{F}^{-1} \left\{ \mathcal{F} \left[ I(x, y) \cdot \exp(i \varphi_1) \right] \cdot \mathcal{F} \left[ \exp(i \varphi_2) \cdot \text{Rect} \right] \right\}
 $$
 
