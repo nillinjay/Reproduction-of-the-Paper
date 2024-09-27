@@ -69,16 +69,17 @@ $$
 ***step 1:物光场投射到虚拟平面上*** 物光场的复振幅可以通过下面的形式传递到虚拟平面上:
 
 $$
-VP(x_v, y_v) = \iint I(x, y) \cdot \exp \left( \frac{i \pi}{\lambda d_2} \left[ (x_v - s_x)^2 + (y_v - s_y)^2 \right] \right) dx\,dy \\
+VP(x_v, y_v) = \iint I(x, y) \cdot \exp \left( \frac{i \pi}{\lambda d_2} \left[ (x_v - s_x)^2 + (y_v - s_y)^2 \right] \right) dx\,dy 
 = \mathcal{F}^{-1} \left\{ \mathcal{F} \left[ I(x, y) \cdot \exp(i \varphi_1) \right] \cdot \mathcal{F} \left[ \exp(i \varphi_2) \cdot \text{Rect} \right] \right\}
 $$
+
 
 其中，Vp代表虚拟平面的复振幅，s代表着缩放因子，rect代表着空间滤波器，这是一个ARSS-fresnel过程
 
 ***step 2:虚拟平面到cgh平面***
 
 $$
-H(x_h, y_h) = \iint VP(x_v, y_v) \cdot \exp \left\{ \frac{i\pi}{\lambda d_1} \left[ (x_h - x_v)^2 + (y_h - y_v)^2 \right] \right\} dx_v dy_v \\
+H(x_h, y_h) = \iint VP(x_v, y_v) \cdot \exp \left\{ \frac{i\pi}{\lambda d_1} \left[ (x_h - x_v)^2 + (y_h - y_v)^2 \right] \right\} dx_v dy_v 
 = \exp \left[ \frac{i\pi(x_h^2 + y_h^2)}{\lambda d_1} \right] \cdot FFT \left[ VP(x_v, y_v) \cdot \exp \left( \frac{i\pi(x_v^2 + y_v^2)}{\lambda d_1} \right) \right]
 $$
 
