@@ -73,7 +73,6 @@ VP(x_v, y_v) = \iint I(x, y) \cdot \exp \left( \frac{i \pi}{\lambda d_2} \left[ 
 = \mathcal{F}^{-1} \left\{ \mathcal{F} \left[ I(x, y) \cdot \exp(i \varphi_1) \right] \cdot \mathcal{F} \left[ \exp(i \varphi_2) \cdot \text{Rect} \right] \right\}
 $$
 
-
 其中，Vp代表虚拟平面的复振幅，s代表着缩放因子，rect代表着空间滤波器，这是一个ARSS-fresnel过程
 
 ***step 2:虚拟平面到cgh平面***
