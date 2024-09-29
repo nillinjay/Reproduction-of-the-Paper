@@ -99,7 +99,8 @@ def propagation_ARSS(u_in, phaseh, phaseu, phasec, dtype=torch.complex64):
     return u_out
 
 
-def clight_generation(u_in, wavelength):
+def clight_generation(u_in, wavelength):#生成一个收敛光
+    
     """
     Propagate the input field u_in through the transfer function TF using FFT.
     """
@@ -235,7 +236,7 @@ def stochastic_gradient_descent(init_phase, target_amp, phaseh, phaseu, phasec, 
 
     for k in range(num_iters):
         optimizer.zero_grad()
-        real, imag = polar_to_rect(torch.ones_like(slm_phase), slm_phase)
+        real, imag = polar_to_rect(torch.ones_like(slm_phase), slm_phase)#全相位编码
         slm_field = torch.complex(real, imag)
 
         pad = torch.nn.ZeroPad2d((1920 // 2, 1920 // 2, 1080 // 2, 1080 // 2))
@@ -321,7 +322,7 @@ if __name__ == "__main__":
     s0 = 1.0
 
     # Image Processing
-    target = cv2.imread('image.png')
+    target = cv2.imread('../jpg/image.png')
     target = cv2.resize(target, (1920, 1080))
     target_amp = cv2.cvtColor(target, cv2.COLOR_BGR2GRAY)
 
@@ -350,7 +351,7 @@ if __name__ == "__main__":
     # Hologram Preservation
     final_phase = np.array(final_phase.data.cpu()[0])[0]
     final_phase = ((final_phase + np.pi) % (2 * np.pi)) / 2 / np.pi * 255
-    output_dir = './experiment'
+    output_dir = '../experiment'
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     output_path = os.path.join(output_dir, 'Circle_HOLO_43.png')

@@ -3,12 +3,15 @@ tags: []
 parent: ""
 collections:
     - 球面全息
-$version: 830
+$version: 897
 $libraryID: 1
 $itemKey: LC2A3LUP
 
 ---
 # Speckle reduced lensless holographic projection from phase-only computergenerated hologram
+**created by nillin**
+
+
 
 ## 摘要
 
@@ -19,9 +22,6 @@ $itemKey: LC2A3LUP
 主要成就：
 1.在数值模拟和实际中验证了对散板噪声的抑制作用
 2.可以很好的利用slm的空间尺寸，最紧凑型无透镜全息投影有很好的作用
-
-
-
 
 
 
@@ -69,7 +69,7 @@ $$
 
 整个建立cgh的过程可以分为两步，如图所示
 
-![\<img alt="衍射过程" data-attachment-key="KMV9LSRF" src="jpg/image.png" ztype="zimage">](jpg/image.png)
+![\<img alt="衍射过程" data-attachment-key="S8SLD2SD" src="jpg/image.png" ztype="zimage">](jpg/image.png)
 
 ***step 1:物光场投射到虚拟平面上*** 物光场的复振幅可以通过下面的形式传递到虚拟平面上:
 
@@ -92,8 +92,8 @@ $$
 这是一个简单的s-fft过程
 
 ***
-*编码过程*
-对于已经得到的复振幅，我们可以通过离轴双相位进行编码，其具体过程如图所示：
+
+*编码过程* 对于已经得到的复振幅，我们可以通过离轴双相位进行编码，其具体过程如图所示：
 
 $$
 \theta_1(x_h,y_h)=\phi_h(x_h,y_h)+\cos^{-1}\left[A_h(x_h,y_h)/A_{max}\right]
@@ -106,7 +106,9 @@ $$
 其中，$\phi_h A_h$分别指代复振幅的幅度和相位
 
 而CGH的最后表达形式如图所示
+
 $$
 p(x_h,y_h)=\theta_1\cdot M_1+\theta_2\cdot M_2+2\pi x_h sin\alpha/\lambda
 $$
+
 其中M指的是两个交替的棋盘格
